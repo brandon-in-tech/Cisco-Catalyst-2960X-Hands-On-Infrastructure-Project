@@ -16,6 +16,13 @@
 
 This project documents hands-on work with a **physical Cisco Catalyst 2960-X** enterprise network switch.
 
+<p align="center">
+  <img src="assets/flowchart.png"
+       alt="Cisco Catalyst 2960-X Infrastructure Recovery and Sanitization Flowchart"
+       width="100%">
+</p>
+
+
 Using Tera Term and a serial-console connection, I accessed the Cisco bootloader and IOS command-line interface to perform equipment sanitization, reinstall Cisco IOS from USB media, configure the boot image, and inspect the switch following reimaging.
 
 The work was performed on actual enterprise networking equipment, not in a simulator.
