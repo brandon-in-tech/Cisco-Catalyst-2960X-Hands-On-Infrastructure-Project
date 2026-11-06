@@ -313,11 +313,13 @@ set
 dir usbflash0:
 ```
 
-Inspected the bootloader environment variables and verified that the USB storage device contained the IOS recovery image.
 
-The `set` command displayed the switch's bootloader environment settings.
+Used `set` to inspect the bootloader environment and identify the switch's hardware and boot settings.
 
-The `dir usbflash0:` command displayed the files available on the recovery media.
+Executed `dir usbflash0:` to confirm access to the attached USB storage and inspect its available firmware images.
+
+The bootloader identified the hardware as `WS-C2960X-24TS-L`. The subsequent recovery-image boot is documented separately in Phase 06.
+
 
 **CLI Evidence**
 
