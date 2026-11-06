@@ -536,29 +536,37 @@ Device serial-number information was redacted from the published screenshot.
 
 ---
 
+
 ## Verification Summary
 
-| Verification Item | Status |
-|---|---|
-| Physical Cisco switch access | Documented |
-| Bootloader access and inspection | Recorded |
-| Internal flash formatting | Recorded |
-| USB-based Cisco IOS boot | Recorded |
-| Secure factory-reset operation | Recorded |
-| FIPS zeroization operation | Recorded |
-| IOS image installation to internal flash | Recorded |
-| Boot statement configuration | Recorded |
-| Boot-path inspection | Recorded |
-| Running configuration review | Recorded |
-| Startup configuration review | Recorded |
-| VLAN database inspection | Recorded |
-| VTP inspection | Recorded |
-| Hardware inventory identification | Recorded |
-| Independent reboot without USB media | Not documented |
-| Physical port connectivity testing | Not documented |
-| Formal sanitization acceptance | Not included in public evidence |
+The following results are supported by the published serial-console evidence.
 
-The recorded verification results are based on the available console screenshots.
+| Verification Item | Documented Finding |
+|---|---|
+| Physical device access | Serial-console access established |
+| Bootloader access | Environment variables inspected |
+| Internal flash formatting | Filesystem formatting confirmed |
+| USB recovery media | USB directory inspected |
+| IOS image loading | Digital-signature verification passed |
+| Secure factory reset | Command and confirmation output captured; full completion not independently verified |
+| FIPS zeroization | Operation initiated; authorization-key removal error reported |
+| IOS image installation | 26,797,056 bytes copied to internal flash |
+| Boot configuration | BOOT path-list displayed the installed IOS image |
+| Configuration persistence | Startup configuration saved successfully |
+| Running configuration | Inspected through `show running-config` |
+| Startup configuration | Inspected through `show startup-config` |
+| VLAN database | Default VLANs identified |
+| VTP configuration | Server mode, revision 0 |
+| Power capability | Non-PoE model; inline power unavailable |
+| Hardware identification | WS-C2960X-24TS-L confirmed |
+| Independent reboot from internal flash | Not documented |
+| Physical interface connectivity | Not tested in the published evidence |
+| Formal sanitization acceptance | Outside the scope of the published record |
+
+### Verification Scope
+
+The console captures establish the documented recovery and configuration activities. They do not constitute a formal sanitization certificate, and no claim is made that post-recovery interface functionality or independent boot validation was completed beyond the available evidence.
+
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
