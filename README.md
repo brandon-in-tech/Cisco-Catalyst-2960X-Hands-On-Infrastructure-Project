@@ -10,11 +10,18 @@
 
 ---
 
+
 ## Overview
 
-### Project Overview
+This repository documents the sanitization, Cisco IOS recovery, and boot configuration of a physical Cisco Catalyst WS-C2960X-24TS-L access switch.
 
-This project documents hands-on work with a **physical Cisco Catalyst 2960-X** enterprise network switch.
+The procedure was carried out through a serial-console connection using Tera Term, with direct access to the Cisco bootloader and IOS command-line interface.
+
+Work included internal flash formatting, secure factory-reset operations, FIPS zeroization, USB-based IOS recovery, installation of the operating-system image to internal flash, and boot configuration.
+
+The switch was subsequently inspected through IOS commands to review its configuration, VLAN database, VTP status, power capability, and hardware inventory.
+
+### Recovery Workflow
 
 <p align="center">
   <img src="assets/flowchart.png"
@@ -22,16 +29,8 @@ This project documents hands-on work with a **physical Cisco Catalyst 2960-X** e
        width="100%">
 </p>
 
+The repository includes 12 CLI evidence captures, equipment photographs, and a supporting technical report. Sanitization activities were performed under NIST-aligned equipment-processing procedures; the published evidence documents device operations rather than formal sanitization acceptance.
 
-Using Tera Term and a serial-console connection, I accessed the Cisco bootloader and IOS command-line interface to perform equipment sanitization, reinstall Cisco IOS from USB media, configure the boot image, and inspect the switch following reimaging.
-
-The work was performed on actual enterprise networking equipment, not in a simulator.
-
-The project aims to follow NIST media sanitization standards. The documented reset and zeroization operations formed part of that process.
-
-This repository contains photographs of the physical equipment, 12 phases of CLI + screenshots, configuration verification, and a supporting technical report.
-
-**Professional Experience:** Beyond this individual project, I have performed NIST-aligned sanitization, Cisco IOS recovery through USB flash + tftp server, and infrastructure servicing procedures across hundreds of physical enterprise networking devices, including multiple generations of Cisco Catalyst and Nexus switches. This experience encompasses different bootloader environments, operating-system recovery methods, command-line procedures, and hardware configurations.
 
 | Project Detail | Information |
 |---|---|
