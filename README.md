@@ -282,9 +282,13 @@ configure terminal
 fips zeroize
 ```
 
-Performed the zeroization operation to clear applicable cryptographic security material and reset associated security state.
 
-The console displayed the corresponding prompts and system response.
+Issued `fips zeroize` from global configuration mode and confirmed the operation through all three console prompts.
+
+The switch initiated the zeroization process and subsequently reloaded. During execution, the console also reported `FIPS: Error removing authorization-key.`
+
+The captured output documents the zeroization attempt and resulting system response, but does not independently confirm complete removal of all cryptographic material.
+
 
 **CLI Evidence**
 
