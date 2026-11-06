@@ -621,22 +621,28 @@ The PDF provides a separate technical record of the sanitization and IOS reinsta
 
 ---
 
+
 ## About
 
-I'm Brandon Stevenson, an IT Profesional working with enterprise server and network equipment.
+**Brandon Stevenson**  
+IT Profesional | Enterprise Servers & Networking | Programming | Programming
 
+IT professional with hands-on experience servicing enterprise server and networking hardware, including Cisco Catalyst and Nexus switches, ISR routers, and ASA firewalls.
 
-This repository documents one of my hands-on infrastructure projects using physical enterprise networking hardware.
+**Education & Credentials**
+- A.A.S. — Computer Information Technology (Software Programming)
+- B.S. Cloud & Network Engineering — Western Governors University (In Progress)
 
-**Portfolio:** [brandons-resume.com](https://brandons-resume.com)
+**Professional Links**
 
-**GitHub:** [Programmer-stevenson](https://github.com/Programmer-stevenson)
-
-**LinkedIn:** [Brandon Stevenson](https://www.linkedin.com/in/brandon-in-tech/)
+- [Portfolio & Resume](https://www.brandons-resume.com/)
+- [GitHub — brandon-in-tech](https://github.com/brandon-in-tech)
+- [LinkedIn](https://www.linkedin.com/in/brandon-in-tech/)
 
 ---
 
-*This project documents technical operations performed on enterprise equipment. The repository is not an official sanitization certificate.*
+*Technical documentation of physical infrastructure servicing and restoration operations. This repository is not an official media sanitization certificate.*
+
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
