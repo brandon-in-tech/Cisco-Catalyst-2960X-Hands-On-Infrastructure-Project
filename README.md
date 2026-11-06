@@ -211,7 +211,7 @@ The directory listing was used to review the filesystem state before proceeding 
 
 ![Phase 01 — Flash Formatting](evidence/2960x-step1.png)
 
-**Result:** Flash formatting and directory inspection were recorded.
+**Verification:** The bootloader confirmed that flash formatting completed. The subsequent directory listing showed no files.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -237,7 +237,7 @@ This provided access to the IOS operating environment after internal flash handl
 
 ![Phase 02 — IOS Boot from USB](evidence/2960x-step2.png)
 
-**Result:** USB-based IOS boot activity was recorded.
+**Evidence:** The bootloader loaded the specified IOS image from USB and reported that digital-signature verification passed.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -263,7 +263,7 @@ The terminal displayed the reset confirmation and information about the data tar
 
 ![Phase 03 — Secure Factory Reset](evidence/2960x-step3.png)
 
-**Result:** Secure factory-reset command activity and console prompts were recorded.
+**Evidence:** The console displayed the secure factory-reset confirmation prompt and identified the files and configuration data targeted for deletion.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -294,7 +294,7 @@ The captured output documents the zeroization attempt and resulting system respo
 
 ![Phase 04 — FIPS Zeroization](evidence/2960x-step4.png)
 
-**Result:** FIPS zeroization command activity was recorded.
+**Evidence:** The zeroization command was initiated, but the console reported an authorization-key removal error before the subsequent reload.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -325,7 +325,7 @@ The bootloader identified the hardware as `WS-C2960X-24TS-L`. The subsequent rec
 
 ![Phase 05 — Bootloader Inspection](evidence/2960x-step5.png)
 
-**Result:** Bootloader settings and USB storage contents were inspected.
+**Evidence:** Bootloader variables identified the switch model, and the USB directory listing confirmed access to recovery media.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -351,7 +351,7 @@ This restored access to IOS for reinstalling the image into internal flash.
 
 ![Phase 06 — Post-Zeroization IOS Boot](evidence/2960x-step6.png)
 
-**Result:** The second USB-based IOS boot was recorded.
+**Evidence:** The second USB-based image load passed digital-signature verification.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -393,7 +393,7 @@ Used `show boot` to inspect the configured boot path.
 
 ![Phase 07 — IOS Installation and Boot Configuration](evidence/2960x-step7.png)
 
-**Result:** IOS installation, boot configuration, and boot-path inspection were recorded.
+**Verification:** The 26,797,056-byte IOS image copy completed, the startup configuration was saved, and the configured boot path pointed to the installed image.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -419,7 +419,7 @@ The running configuration was reviewed for existing device settings and configur
 
 ![Phase 08 — Running Configuration](evidence/2960x-step8.png)
 
-**Result:** Active configuration output was recorded.
+**Evidence:** The running configuration displayed the Switch hostname, IOS configuration settings, and switch provisioning information.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -445,7 +445,7 @@ The startup configuration was reviewed separately from the running configuration
 
 ![Phase 09 — Startup Configuration](evidence/2960x-step9.png)
 
-**Result:** Saved configuration output was recorded.
+**Evidence:** The startup configuration was present in NVRAM and displayed the saved 1,650-byte configuration.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -471,7 +471,7 @@ The captured output displayed default VLAN information, including VLAN 1 and the
 
 ![Phase 10 — VLAN Inspection](evidence/2960x-step10.png)
 
-**Result:** VLAN database information was recorded.
+**Evidence:** The VLAN database contained VLAN 1 and the reserved default VLANs 1002–1005, with no custom VLANs shown.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
@@ -500,8 +500,8 @@ The WS-C2960X-24TS-L is a non-PoE model, so PoE functionality is not supported.
 
 ![Phase 11 — VTP and Power Inspection](evidence/2960x-step11.png)
 
-**Result:** VTP status and power-related output were recorded.
-
+**Evidence:** VTP reported server mode with configuration revision 0. Inline power values were unavailable, consistent with the non-PoE switch model
+ 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
 </p>
@@ -528,7 +528,7 @@ Device serial-number information was redacted from the published screenshot.
 
 ![Phase 12 — Hardware Inventory](evidence/2960x-step12.png)
 
-**Result:** Hardware model and inventory information were recorded.
+**Verification:** The inventory output identified PID WS-C2960X-24TS-L. The device serial number was redacted from the published capture.
 
 <p align="right">
   <a href="#table-of-contents">↑ Back to Table of Contents</a>
