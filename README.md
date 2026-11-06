@@ -593,6 +593,7 @@ Cisco-Catalyst-2960X-Hands-On-Infrastructure-Project/
 │   ├── brandons-logo.png
 │   ├── c2960x-whole.png
 │   └── c2960x-front.png
+    ├── flowchart.png
 │
 └── evidence/
     ├── 2960x-step1.png
