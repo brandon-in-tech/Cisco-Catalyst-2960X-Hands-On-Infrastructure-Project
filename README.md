@@ -39,7 +39,7 @@ The repository includes 12 CLI evidence captures, equipment photographs, and a s
 | IOS Image | `c2960x-universalk9-mz.152-7.E11.bin` |
 | Console Application | Tera Term |
 | Access Method | Serial Console |
-| Recovery Media | USB Flash Drive | Set Boot Variables & Verification
+| Recovery Media | USB Flash Drive |
 | Environment | Isolated Physical Equipment |
 | Sanitization Framework | NIST-aligned organizational procedures |
 
