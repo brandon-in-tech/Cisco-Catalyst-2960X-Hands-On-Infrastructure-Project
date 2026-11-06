@@ -1,5 +1,5 @@
 
-# Cisco Catalyst 2960-X | Hands-On Network Infrastructure Project
+ # Cisco Catalyst 2960-X | Secure Sanitization & IOS Restoration
 <p align="center">
   <img src="assets/brandons-logo.png" alt="Brandon Stevenson IT Professional" width="300">
 </p>
